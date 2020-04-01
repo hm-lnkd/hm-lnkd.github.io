@@ -1,0 +1,113 @@
+h1
+{
+	font-size: 25px;
+	font-family: Poppins-ExtraLight;
+	text-align: center;
+}
+h2
+{
+	display: inline;
+	font-family: Poppins-ExtraLight;
+	padding-left: 190px;
+	padding-right: 190px;
+}
+body
+{
+	background-image: url("res\\grayWhite.jpg");
+}
+a
+{
+    color: Black;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color: grey;
+     text-decoration:none;
+     cursor:pointer;
+}
+.imgContainer
+{
+	float: left;
+	padding-top: 50px;
+	padding-right: 200px;
+	padding-left: 20px;
+	max-width: 55%;
+}
+.container
+{
+	float: left;
+	padding-left: 5px;
+}
+.image
+{
+	opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle
+{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+}
+.image:hover
+{
+  opacity: 0.3;
+}
+.container:hover .middle
+{
+	opacity: 1;
+}
+
+.text
+{
+  background-color: Black;
+	font-family: "Courier New";
+  color: white;
+  font-size: 16px;
+}
+img[src="res\\howie.jpg"]
+{
+	position: relative;
+	left: 90px;
+}
+#aboutMe
+{
+	font-size: 18px;
+	font-family: Poppins;
+	width: 400px;
+	position: relative;
+	left: 50px;
+	text-align: center;
+}
+
+/*Skill Page */
+.containerSkill
+{
+	float: left;
+	padding-top: 50px;
+	font-family: Poppins-ExtraLight;
+	font-size: 20px;
+	padding-right: 150px;
+	padding-left: 150px;
+}
+.containerSkill li, p
+{
+		font-family: Poppins;
+		color: Black;
+		font-size: 18px;
+		padding-bottom: 10px;
+}
+/* project page */
+
+@font-face
+{
+		font-family: Poppins;
+		src: url("Poppins\\Poppins-Light.ttf");
+}
+@font-face {
+	font-family: Poppins-ExtraLight;
+	src: url("Poppins\\Poppins-ExtraLight.ttf");
+}
