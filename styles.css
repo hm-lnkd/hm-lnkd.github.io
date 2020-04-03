@@ -35,6 +35,15 @@ a:hover
 	padding-left: 20px;
 	max-width: 55%;
 }
+.collage
+{
+	float: left;
+	padding-top: 50px;
+	padding-right: 200px;
+	padding-left: 20px;
+	max-width: 970px;
+
+}
 .container
 {
 	float: left;
