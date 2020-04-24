@@ -8,8 +8,8 @@ h2
 {
 	display: inline;
 	font-family: Poppins-ExtraLight;
-	padding-left: 180px;
-	padding-right: 180px;
+	padding-left: 120px;
+	padding-right: 120px;
 }
 body
 {
@@ -31,7 +31,6 @@ a:hover
 {
 	float: left;
 	padding-top: 50px;
-	padding-right: 200px;
 	padding-left: 20px;
 	max-width: 55%;
 }
@@ -39,8 +38,7 @@ a:hover
 {
 	float: left;
 	padding-top: 50px;
-	padding-right: 200px;
-	padding-left: 20px;
+	padding-left: 115px;
 	max-width: 800px;
 
 }
