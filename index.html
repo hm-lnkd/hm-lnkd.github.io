@@ -1,54 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-	<link rel="stylesheet" href="styles.css">
-	<title>Howard Montes De Oca</title>
-	</head>
-	<body>
-	<h1>Howard Montes De Oca</h1>
-	<h2><a href="index.html">About Me</a></h2>
-	<h2><a href="skills.html">Skills</a></h2>
-	<h2><a href="projects.html">Projects</a></h2>
-	<h2><a href="info.html">Info</a></h2>
-	<br>
-		<div class="imgContainer">
-			<img src="res\howie.jpg" height="400px" alt="A picture of Howard MOntes De Oca">
-				<p id="aboutMe">I am an aspiring software engineer
-					willing to take any task necessary. Other than being a Computer Science
-					Student at California Polytechnic University Pomona, I am 21 years old,
-					I live in the great town of Boyle Heights, and I love exploring
-					Metropolitan Areas (unfortunately that has changed).
-				</p>
-		</div>
-		<div class="collage">
-			<div class="container">
-					<img src="res\searsBH.jpg" height="250px" class="image"
-						alt="Sears Tower in Boyle Heights">
-						<div class="middle">
-							<div class="text"> Sears Tower (Boyle Heights) </div>
-						</div>
-			</div>
-			<div class = "container">
-					<img src="res\nokiaCenter.jpg" height="250px" class="image"
-						alt="Nokia Center in Downtown Los Angeles">
-						<div class="middle">
-							<div class="text">Nokia Center</div>
-						</div>
-			</div>
-			<div class = "container">
-					<img src="res\cloudy.jpg" height="250px" class="image"
-						alt="A cloudy day in downtown grand ave.">
-						<div class="middle">
-							<div class="text">Grand Ave</div>
-						</div>
-			</div>
-			<div class = "container">
-				<img src="res\olympic.jpg" height="250px" class="image"
-					alt="Olympic Blvd. near Staples Center">
-						<div class="middle">
-							<div class="text"> Olympic Blvd. near Staples Center</div>
-						</div>
-			</div>
-		</div>
-	</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Howard MDO</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/lux/bulmaswatch.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar is-spaced is-fixed is-size-4" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">Howard Montes De Oca</a>
+          <!-- Must have navbar burger as last child for navbar brand-->
+          <a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      <!--Navbar items-->
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#skills">
+              Skills
+            </a>
+            <a class="navbar-item" href="#projects">
+              Projects
+            </a>
+            <a class="navbar-item" href="#otherInfo">
+              Other Info
+            </a>
+            <a class="navbar-item" href="#contact">
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!--About Me Section-->
+      <section id="aboutMe" class="section">
+        <h1 class="title has-text-centered">About Me</h1>
+        <div class="container is-max-desktop has-text-centered p-6">
+          <img src="images/howie.jpg"  width="300rem" alt="avatar" id="avatar">
+          <div class="box is-size-4">
+              I am an aspiring software engineer willing to take any task necessary. 
+              Other than being a Computer Science Student at California Polytechnic University Pomona, 
+             I am 22 years old, I live in the great town of Boyle Heights, and I love exploring Metropolitan Areas
+          </div>
+        </div>
+      </section>
+      <!--Skills Section-->
+      <section id="skills" class="section">
+        <h1 class="title has-text-centered">Skills</h1>
+        <div class="box is-size-4">
+          <div class="columns has-text-centered is-size-4">
+            <div class="column"><u>Programming</u>
+              <ul class="is-size-5">
+                <li>Java / JavaFx</li>
+                <li>C++</li>
+                <li>MIPS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Bash</li>
+                <li>Perl</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div class="column"><u>Cirriculum</u>
+              <ul class="is-size-5">
+                <li>Data Structures & Analysis of Algorithms</li>
+                <li>Search Engines & Web Reccomenders</li>
+                <li>Programming Graphical User Interfaces</li>
+                <li>Computer Architecture</li>
+                <li>Numerical Methods</li>
+                <li>Formal Languages & Automata</li>
+                <li>Unix & Scripting</li>
+                <li>Multivariable Calculus</li>
+                <li>Linear Algebra & Differential Equations</li>
+              </ul>
+            </div>
+            <div class="column"><u>Additional</u>
+              <ul class="is-size-5">
+                <li>Computer Building</li>
+                <li>Sales and Customer Service</li>
+                <li>Technologically Proficient</li>
+                <li>Bilingual</li>
+                <li>Quick Learning</li>
+                <li>Team Player</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Projects Section-->
+      <section id="projects" class="section">
+        <h1 class="title has-text-centered">Projects</h1>
+        <!--card 1-->
+        <div class="card is-size-4">
+          <header class="card-header">
+            <p class="card-header-title">
+              Homemade Goods / Node, React, MongoDB 
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <ul>
+                <li>Displays local businesses with homemade goods</li>
+                <li>Dynamically loaded website with new cards
+                  From database</li>
+                <li>Implemented Front-end design with React js</li>
+              </ul>
+              <br>
+              <time>Dec 2020</time>
+            </div>
+          </div>
+          <!--card 2-->
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                SeaShell/ C++, Bash 
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <ul>
+                  <li>Recreated an interactive bash terminal with C/C++ code</li>
+                  <li>Command line interface that operates like most UNIX shells</li>
+                  <li>Bash scripting incorporated to test all commands available</li>
+                </ul>
+                <br>
+                <time>Oct 2020</time>
+              </div>
+            </div>
+            <!--card 3-->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  Funko Pop Hunter (Web Scraper) / Java, JavaFx
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <ul>
+                    <li>Developed JavaFX Graphical User Interfaces</li>
+                    <li>Implemented Jsoup file parsing and regex handling</li>
+                    <li>Crawled HTML files and Extracted Name matches/Hyperlinks</li>
+                  </ul>
+                  <br>
+                  <time>Jan 2020</time>
+                </div>
+              </div>
+              <!--card 4-->
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    3D Shape Manipulator / Java, JavaFX 
+                  </p>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <ul>
+                      <li> Developed interactive shape displayer that can manipulate
+                        and move shapes</li>
+                      <li> Utilized JavaFX to create Menus, Toolbars, error dialogs, and file
+                        opening/saving</li>
+                    </ul>
+                    <br>
+                    <time>Dec 2019</time>
+                  </div>
+                </div>
+      </section>
+      <!--Other Information-->
+      <section id="otherInfo" class="section">
+        <h1 class="title has-text-centered">Other Information</h1>
+      </section>
+      <!--Contact Me-->
+      <section id="contact" class="section">
+        <h1 class="title has-text-centered">Contact</h1>
+      </section>
+      <script src="index.js"></script>
+  </body>
 </html>
